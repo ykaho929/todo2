@@ -1,4 +1,4 @@
-@extends('app.blade.php')
+@extends('layouts.app')
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/index.css') }}">
