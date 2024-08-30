@@ -8,11 +8,12 @@ use Illuminate\Http\Request;
 
 class TodoController extends Controller
 {
-  public function index()
-  {
-    return view('index');
-  }
+public function index()
+{
+$todos = Todo::all();
 
+return view('index', compact('todos'));
+}
   public function store(Request $request)
   {
     $todo = $request->only(['content']);
